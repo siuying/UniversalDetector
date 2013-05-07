@@ -46,8 +46,9 @@
     // http://news.mingpao.com/20130507/gaa1.htm
     NSData* data = [UniversalDetectorTest dataWithFixtureFile:@"mingpao"];
     STAssertNotNil(data, nil);
-    
-    CFStringEncodings encoding = [UniversalDetector detectEncoding:data];
+    UniversalDetector* detector = [[UniversalDetector alloc] init];
+
+    CFStringEncodings encoding = [detector detectEncoding:data];
     STAssertTrue(kCFStringEncodingInvalidId != encoding, nil);
     STAssertTrue(CFStringIsEncodingAvailable(encoding), nil);
     STAssertEquals(encoding, kCFStringEncodingBig5, nil);
@@ -56,7 +57,7 @@
     data = [UniversalDetectorTest dataWithFixtureFile:@"jijicom"];
     STAssertNotNil(data, nil);
 
-    encoding = [UniversalDetector detectEncoding:data];
+    encoding = [detector detectEncoding:data];
     STAssertTrue(kCFStringEncodingInvalidId != encoding, nil);
     STAssertTrue(CFStringIsEncodingAvailable(encoding), nil);
     STAssertEquals(encoding, kCFStringEncodingEUC_JP, nil);
@@ -65,7 +66,7 @@
     data = [UniversalDetectorTest dataWithFixtureFile:@"yomiuri"];
     STAssertNotNil(data, nil);
     
-    encoding = [UniversalDetector detectEncoding:data];
+    encoding = [detector detectEncoding:data];
     STAssertTrue(kCFStringEncodingInvalidId != encoding, nil);
     STAssertTrue(CFStringIsEncodingAvailable(encoding), nil);
     STAssertEquals(encoding, kCFStringEncodingShiftJIS, nil);
@@ -74,10 +75,16 @@
     data = [UniversalDetectorTest dataWithFixtureFile:@"theverge"];
     STAssertNotNil(data, nil);
     
-    encoding = [UniversalDetector detectEncoding:data];
+    encoding = [detector detectEncoding:data];
     STAssertTrue(kCFStringEncodingInvalidId != encoding, nil);
     STAssertTrue(CFStringIsEncodingAvailable(encoding), nil);
     STAssertEquals(encoding, (CFStringEncodings) kCFStringEncodingUTF8, nil);
+    
+    // pure ascii encoding
+    data = [UniversalDetectorTest dataWithFixtureFile:@"ascii"];
+    STAssertNotNil(data, nil);
+    encoding = [detector detectEncoding:data];
+    STAssertEquals(encoding, (CFStringEncodings) kCFStringEncodingInvalidId, nil);
 }
 
 @end
