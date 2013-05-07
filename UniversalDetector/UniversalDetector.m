@@ -23,20 +23,27 @@
     uchardet_delete(_detector);
 }
 
--(CFStringEncodings) detectEncoding:(NSData*)data {
-    uchardet_handle_data(_detector, [data bytes], [data length]);
-    uchardet_data_end(_detector);
-    const char * charset = uchardet_get_charset(_detector);
-
-    NSString* encodingName = [NSString stringWithCString:charset encoding:NSASCIIStringEncoding];
+-(CFStringEncodings) encodingWithData:(NSData *)data {
+    NSString* encodingName = [self encodingAsStringWithData:data];
     CFStringEncodings encoding = CFStringConvertIANACharSetNameToEncoding((CFStringRef)encodingName);
-    uchardet_reset(_detector);
-
     return encoding;
 }
 
-+(CFStringEncodings) detectEncoding:(NSData*)data {
-    return [[[UniversalDetector alloc] init] detectEncoding:data];
+-(NSString*) encodingAsStringWithData:(NSData *)data {
+    uchardet_handle_data(_detector, [data bytes], [data length]);
+    uchardet_data_end(_detector);
+    const char * charset = uchardet_get_charset(_detector);
+    NSString* encoding = [NSString stringWithCString:charset encoding:NSASCIIStringEncoding];
+    uchardet_reset(_detector);
+    return encoding;
+}
+
++(CFStringEncodings) encodingWithData:(NSData*)data {
+    return [[[UniversalDetector alloc] init] encodingWithData:data];    
+}
+
++(NSString*) encodingAsStringWithData:(NSData*)data {
+    return [[[UniversalDetector alloc] init] encodingAsStringWithData:data];
 }
 
 @end
