@@ -10,4 +10,6 @@
 
 @interface UniversalDetector : NSObject
 
++(CFStringEncodings) detectEncoding:(NSData*)data;
+
 @end
