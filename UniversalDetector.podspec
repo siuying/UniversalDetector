@@ -9,6 +9,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'UniversalDetector/*.{h,m}', 'external/uchardet/src/*.{cpp,h,tab}', 'external/uchardet/src/tools/*.cpp'
   s.public_header_files = 'UniversalDetector/*.h', 'external/uchardet/src/uchardet.h'
-  s.xcconfig = { 'OTHER_LDLAGS' => '-lstdc++ -lc++' }
+  s.library      =  'stdc++'
+
   s.requires_arc = true
 end
