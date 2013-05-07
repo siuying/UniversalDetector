@@ -80,6 +80,15 @@
     STAssertTrue(CFStringIsEncodingAvailable(encoding), nil);
     STAssertEquals(encoding, (CFStringEncodings) kCFStringEncodingUTF8, nil);
     
+    // http://headline.2ch.net/bbynamazu/
+    data = [UniversalDetectorTest dataWithFixtureFile:@"2ch"];
+    STAssertNotNil(data, nil);
+    
+    encoding = [detector detectEncoding:data];
+    STAssertTrue(kCFStringEncodingInvalidId != encoding, nil);
+    STAssertTrue(CFStringIsEncodingAvailable(encoding), nil);
+    STAssertEquals(encoding, (CFStringEncodings) kCFStringEncodingShiftJIS, nil);
+    
     // pure ascii encoding
     data = [UniversalDetectorTest dataWithFixtureFile:@"ascii"];
     STAssertNotNil(data, nil);

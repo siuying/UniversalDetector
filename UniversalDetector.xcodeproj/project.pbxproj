@@ -73,6 +73,7 @@
 		54ABD3B91738B69500825BAD /* yomiuri.html in Resources */ = {isa = PBXBuildFile; fileRef = 54ABD3B81738B69500825BAD /* yomiuri.html */; };
 		54ABD3BB1738B6F300825BAD /* theverge.html in Resources */ = {isa = PBXBuildFile; fileRef = 54ABD3BA1738B6F300825BAD /* theverge.html */; };
 		54ABD3BD1738B90200825BAD /* ascii.html in Resources */ = {isa = PBXBuildFile; fileRef = 54ABD3BC1738B90200825BAD /* ascii.html */; };
+		54ABD54B173909A800825BAD /* 2ch.html in Resources */ = {isa = PBXBuildFile; fileRef = 54ABD54A173909A800825BAD /* 2ch.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -164,6 +165,7 @@
 		54ABD3B81738B69500825BAD /* yomiuri.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = yomiuri.html; sourceTree = "<group>"; };
 		54ABD3BA1738B6F300825BAD /* theverge.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = theverge.html; sourceTree = "<group>"; };
 		54ABD3BC1738B90200825BAD /* ascii.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ascii.html; sourceTree = "<group>"; };
+		54ABD54A173909A800825BAD /* 2ch.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = 2ch.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -333,6 +335,7 @@
 		54ABD37E1738AFE700825BAD /* Fixtures */ = {
 			isa = PBXGroup;
 			children = (
+				54ABD54A173909A800825BAD /* 2ch.html */,
 				54ABD3BC1738B90200825BAD /* ascii.html */,
 				54ABD3BA1738B6F300825BAD /* theverge.html */,
 				54ABD3B81738B69500825BAD /* yomiuri.html */,
@@ -418,6 +421,7 @@
 				54ABD3B91738B69500825BAD /* yomiuri.html in Resources */,
 				54ABD3BB1738B6F300825BAD /* theverge.html in Resources */,
 				54ABD3BD1738B90200825BAD /* ascii.html in Resources */,
+				54ABD54B173909A800825BAD /* 2ch.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -649,6 +653,7 @@
 				54ABD32A1738AE2300825BAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		54ABD37B1738AF9500825BAD /* Build configuration list for PBXNativeTarget "UniversalDetectorTest" */ = {
 			isa = XCConfigurationList;
@@ -657,6 +662,7 @@
 				54ABD37D1738AF9500825BAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
