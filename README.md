@@ -19,7 +19,7 @@ If you use CocoaPods, add following line to your Podfile:
 pod 'UniversalDetector'
 ```
 
-Otherwise, add 'UniversalDetector/*.{h,m}', 'external/uchardet/src/*.{cpp,h,tab}', 'external/uchardet/src/tools/*.cpp' and library 'libstdc++' to your project.
+Otherwise, add 'UniversalDetector/*.{h,m}', 'external/uchardet/src/*.{cpp,h,tab}' and library 'libstdc++' to your project.
 
 ## LICENSE 
 
