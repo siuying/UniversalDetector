@@ -1,3 +1,3 @@
 [submodule "external/uchardet"]
 	path = external/uchardet
-	url = git@github.com:BYVoid/uchardet.git
+	url = https://github.com/BYVoid/uchardet.git
