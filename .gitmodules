@@ -1,3 +1,0 @@
-[submodule "external/uchardet"]
-	path = external/uchardet
-	url = https://github.com/BYVoid/uchardet.git

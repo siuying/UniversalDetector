@@ -10,7 +10,9 @@
 #include "EUCKRFreq.tab"
 #include "EUCTWFreq.tab"
 #include "GB2312Freq.tab"
-#include "nsMemory.h"
+
+#define NS_ARRAY_LENGTH(array_) \
+(sizeof(array_)/sizeof(array_[0]))
 
 #define SURE_YES 0.99f
 #define SURE_NO  0.01f

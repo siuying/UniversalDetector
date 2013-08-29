@@ -6,7 +6,7 @@
 #define nsCodingStateMachine_h__
 
 #include "nsPkgInt.h"
-#include "mozilla/Util.h"
+//#include "mozilla/Util.h"
 
 typedef enum {
    eStart = 0,
@@ -23,9 +23,6 @@ typedef struct
   uint32_t classFactor;
   nsPkgInt stateTable;
   const uint32_t* charLenTable;
-#ifdef DEBUG
-  const size_t charLenTableLength;
-#endif
   const char* name;
 } SMModel;
 
@@ -38,7 +35,7 @@ public:
     if (mCurrentState == eStart)
     { 
       mCurrentBytePos = 0; 
-      MOZ_ASSERT(byteCls < mModel->charLenTableLength);
+      // MOZ_ASSERT(byteCls < mModel->charLenTableLength);
       mCurrentCharLen = mModel->charLenTable[byteCls];
     }
     //from byte's class and stateTable, we get its next state
@@ -73,12 +70,7 @@ extern const SMModel ISO2022CNSMModel;
 extern const SMModel ISO2022JPSMModel;
 extern const SMModel ISO2022KRSMModel;
 
-#undef CHAR_LEN_TABLE
-#ifdef DEBUG
-#define CHAR_LEN_TABLE(x) x, mozilla::ArrayLength(x)
-#else
 #define CHAR_LEN_TABLE(x) x
-#endif
 
 #endif /* nsCodingStateMachine_h__ */
 

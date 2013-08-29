@@ -4,7 +4,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 #include "nsEUCTWProber.h"
-#include "nsDebug.h"
+//#include "nsDebug.h"
 
 void  nsEUCTWProber::Reset(void)
 {
@@ -16,7 +16,7 @@ void  nsEUCTWProber::Reset(void)
 
 nsProbingState nsEUCTWProber::HandleData(const char* aBuf, uint32_t aLen)
 {
-  NS_ASSERTION(aLen, "HandleData called with empty buffer");
+  //NS_ASSERTION(aLen, "HandleData called with empty buffer");
   nsSMState codingState;
 
   for (uint32_t i = 0; i < aLen; i++)

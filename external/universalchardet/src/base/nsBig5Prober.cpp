@@ -4,7 +4,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 #include "nsBig5Prober.h"
-#include "nsDebug.h"
+//#include "nsDebug.h"
 
 void  nsBig5Prober::Reset(void)
 {
@@ -15,7 +15,7 @@ void  nsBig5Prober::Reset(void)
 
 nsProbingState nsBig5Prober::HandleData(const char* aBuf, uint32_t aLen)
 {
-  NS_ASSERTION(aLen, "HandleData called with empty buffer");
+  // NS_ASSERTION(aLen, "HandleData called with empty buffer");
   nsSMState codingState;
 
   for (uint32_t i = 0; i < aLen; i++)
