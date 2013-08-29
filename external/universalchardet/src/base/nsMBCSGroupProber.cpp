@@ -24,7 +24,7 @@ const char *ProberName[] =
 nsMBCSGroupProber::nsMBCSGroupProber(uint32_t aLanguageFilter)
 {
   for (uint32_t i = 0; i < NUM_OF_PROBERS; i++)
-    mProbers[i] = nullptr;
+    mProbers[i] = nsnull;
 
   mProbers[0] = new nsUTF8Prober();
   if (aLanguageFilter & NS_FILTER_JAPANESE) 
