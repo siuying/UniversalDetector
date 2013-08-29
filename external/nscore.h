@@ -37,6 +37,7 @@
 #ifndef nsDummyCore_h__
 #define nsDummyCore_h__
 #import <stdint.h>
+#include <cstddef>
 
 typedef bool PRBool;
 typedef int PRInt32;
@@ -49,7 +50,6 @@ typedef unsigned char PRUint8;
 #define PR_FALSE false
 #define PR_TRUE true
 #define nsnull 0
-
 
 enum nsresult
 {
