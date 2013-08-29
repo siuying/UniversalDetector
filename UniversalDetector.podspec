@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'UniversalDetector'
-  s.version = '1.3.0'
+  s.version = '1.3.1'
   s.license = { :type => 'Mozilla Public License', :file => 'LICENSE' }
   s.summary             =  'Wrapper of uchardet for Objective-C.'
   s.description         =  'UniversalDetector takes a sequence of bytes in an unknown character encoding without any additional information, and attempts to determine the encoding of the text.'
