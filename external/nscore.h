@@ -37,7 +37,6 @@
 #ifndef nsDummyCore_h__
 #define nsDummyCore_h__
 #import <stdint.h>
-#include <cstddef>
 
 typedef bool PRBool;
 typedef int PRInt32;
