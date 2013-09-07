@@ -28,6 +28,16 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "54ABD36A1738AF9500825BAD"
+               BuildableName = "UniversalDetectorTest.octest"
+               BlueprintName = "UniversalDetectorTest"
+               ReferencedContainer = "container:UniversalDetector.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

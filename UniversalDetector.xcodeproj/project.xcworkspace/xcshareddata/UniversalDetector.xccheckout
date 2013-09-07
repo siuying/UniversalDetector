@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BFD23E6D-5BEA-49B7-8096-540FF6901138</string>
+	<key>IDESourceControlProjectName</key>
+	<string>UniversalDetector</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>DCEB9252-F1DC-41A0-9E4A-79FA07C3607E</key>
+		<string>ssh://github.com/siuying/UniversalDetector.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>UniversalDetector.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>DCEB9252-F1DC-41A0-9E4A-79FA07C3607E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/siuying/UniversalDetector.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DCEB9252-F1DC-41A0-9E4A-79FA07C3607E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DCEB9252-F1DC-41A0-9E4A-79FA07C3607E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>UniversalDetector</string>
+		</dict>
+	</array>
+</dict>
+</plist>
