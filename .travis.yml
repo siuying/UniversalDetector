@@ -2,5 +2,4 @@ language: objective-c
 before_install:
     - brew update
     - brew uninstall xctool && brew install xctool --HEAD
-    - pod install
 script: rake test
