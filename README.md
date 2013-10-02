@@ -7,7 +7,7 @@ UniversalDetector is an encoding detector library, which takes a sequence of byt
 ## Usage
 
 ```
-CFStringEncodings encoding = [UniversalDetector encodingWithData:data];
+CFStringEncoding encoding = [UniversalDetector encodingWithData:data];
 NSString* encodingStr      = [UniversalDetector encodingAsStringWithData:data];
 ```
 
