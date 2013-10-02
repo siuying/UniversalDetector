@@ -6,43 +6,64 @@
 //  Copyright (c) 2013 Ignition Soft. All rights reserved.
 //
 
+
 #import "UniversalDetector.h"
 #import "uchardet.h"
 
+
+
 @implementation UniversalDetector
 
--(id) init {
+- (id)init
+{
     self = [super init];
-    if (self) {
+    
+    if (self)
+    {
         _detector = uchardet_new();
     }
+    
     return self;
 }
 
--(void) dealloc {
+
+- (void)dealloc
+{
     uchardet_delete(_detector);
 }
 
--(CFStringEncodings) encodingWithData:(NSData *)data {
-    NSString* encodingName = [self encodingAsStringWithData:data];
-    CFStringEncodings encoding = CFStringConvertIANACharSetNameToEncoding((CFStringRef)encodingName);
+
+- (CFStringEncoding)encodingWithData:(NSData *)data
+{
+    NSString *encodingName      = [self encodingAsStringWithData:data];
+    CFStringEncoding encoding   = CFStringConvertIANACharSetNameToEncoding((CFStringRef)encodingName);
+    
     return encoding;
 }
 
--(NSString*) encodingAsStringWithData:(NSData *)data {
+
+- (NSString *)encodingAsStringWithData:(NSData *)data
+{
     uchardet_handle_data(_detector, [data bytes], [data length]);
     uchardet_data_end(_detector);
-    const char * charset = uchardet_get_charset(_detector);
-    NSString* encoding = [NSString stringWithCString:charset encoding:NSASCIIStringEncoding];
+    
+    const char *charset = uchardet_get_charset(_detector);
+    NSString *encoding = [NSString stringWithCString:charset encoding:NSASCIIStringEncoding];
+    
     uchardet_reset(_detector);
+    
     return encoding;
 }
 
-+(CFStringEncodings) encodingWithData:(NSData*)data {
-    return [[[UniversalDetector alloc] init] encodingWithData:data];    
+
++ (CFStringEncoding)encodingWithData:(NSData *)data
+{
+    return [[[UniversalDetector alloc] init] encodingWithData:data];
 }
 
-+(NSString*) encodingAsStringWithData:(NSData*)data {
+
++(NSString *)encodingAsStringWithData:(NSData *)data
+{
     return [[[UniversalDetector alloc] init] encodingAsStringWithData:data];
 }
 

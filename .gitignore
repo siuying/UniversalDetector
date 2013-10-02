@@ -1,3 +1,19 @@
-UniversalDetector.xcodeproj/xcuserdata/*.xcuserdatad
-UniversalDetector.xcodeproj/project.pbxproj
-UniversalDetector.xcodeproj/project.xcworkspace/xcuserdata
+# Mac OS X
+*.swp
+*.swo
+.DS_Store
+
+# Ruby
+*.rbo
+*.gem
+.rbenv-version
+.rbx/
+
+# CocoaPods
+Podfile.lock
+Pods
+
+# Xcode
+xcuserdata
+DerivedData
+*.xccheckout
