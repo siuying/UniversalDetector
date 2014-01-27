@@ -12,6 +12,10 @@ Pod::Spec.new do |s|
   s.public_header_files = 'UniversalDetector/*.h', 'external/uchardet.h'
   s.resources           = 'external/universalchardet/src/base/*.tab'
   s.library             = 'stdc++'
-
+  s.xcconfig = {
+       'CLANG_CXX_LANGUAGE_STANDARD' => 'c++0x',
+       'CLANG_CXX_LIBRARY' => 'libstdc++'
+  }
+  
   s.requires_arc = true
 end
