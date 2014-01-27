@@ -39,7 +39,6 @@
     UniversalDetector* detector = [[UniversalDetector alloc] init];
 
     CFStringEncodings encoding = [detector encodingWithData:data];
-    STAssertTrue(kCFStringEncodingInvalidId != encoding, nil);
     STAssertTrue(CFStringIsEncodingAvailable(encoding), nil);
     STAssertEquals(encoding, kCFStringEncodingBig5, nil);
     
@@ -48,7 +47,6 @@
     STAssertNotNil(data, nil);
     
     encoding = [detector encodingWithData:data];
-    STAssertTrue(kCFStringEncodingInvalidId != encoding, nil);
     STAssertTrue(CFStringIsEncodingAvailable(encoding), nil);
     STAssertEquals(encoding, kCFStringEncodingEUC_JP, nil);
     
@@ -57,7 +55,6 @@
     STAssertNotNil(data, nil);
     
     encoding = [detector encodingWithData:data];
-    STAssertTrue(kCFStringEncodingInvalidId != encoding, nil);
     STAssertTrue(CFStringIsEncodingAvailable(encoding), nil);
     STAssertEquals(encoding, kCFStringEncodingShiftJIS, nil);
     
@@ -66,7 +63,6 @@
     STAssertNotNil(data, nil);
     
     encoding = [detector encodingWithData:data];
-    STAssertTrue(kCFStringEncodingInvalidId != encoding, nil);
     STAssertTrue(CFStringIsEncodingAvailable(encoding), nil);
     STAssertEquals(encoding, (CFStringEncodings) kCFStringEncodingUTF8, nil);
     
@@ -75,7 +71,6 @@
     STAssertNotNil(data, nil);
     
     encoding = [detector encodingWithData:data];
-    STAssertTrue(kCFStringEncodingInvalidId != encoding, nil);
     STAssertTrue(CFStringIsEncodingAvailable(encoding), nil);
     STAssertEquals(encoding, (CFStringEncodings) kCFStringEncodingShiftJIS, nil);
     
@@ -84,7 +79,6 @@
     STAssertNotNil(data, nil);
     
     encoding = [detector encodingWithData:data];
-    STAssertTrue(kCFStringEncodingInvalidId != encoding, nil);
     STAssertTrue(CFStringIsEncodingAvailable(encoding), nil);
     STAssertEquals(encoding, (CFStringEncodings) kCFStringEncodingISOLatin2, nil);
     
@@ -92,7 +86,7 @@
     data = [UniversalDetectorTest dataWithFixtureFile:@"ascii"];
     STAssertNotNil(data, nil);
     encoding = [detector encodingWithData:data];
-    STAssertEquals(encoding, (CFStringEncodings) kCFStringEncodingInvalidId, nil);
+    STAssertEquals(encoding, (CFStringEncodings) kCFStringEncodingASCII, nil);
 }
 
 - (void)testEncodingAsString
@@ -144,7 +138,7 @@
     data = [UniversalDetectorTest dataWithFixtureFile:@"ascii"];
     STAssertNotNil(data, nil);
     encoding = [detector encodingAsStringWithData:data];
-    STAssertEqualObjects(encoding, @"", nil);
+    STAssertEqualObjects(encoding, @"US-ASCII", nil);
 }
 
 @end
