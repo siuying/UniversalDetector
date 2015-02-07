@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54316EAD1A85FE5B00100171 /* Big5Freq.tab in Sources */ = {isa = PBXBuildFile; fileRef = 54FDB6B317CF179000D776C6 /* Big5Freq.tab */; };
+		54316EAE1A85FE5B00100171 /* EUCKRFreq.tab in Sources */ = {isa = PBXBuildFile; fileRef = 54FDB6B617CF179000D776C6 /* EUCKRFreq.tab */; };
+		54316EAF1A85FE5B00100171 /* EUCTWFreq.tab in Sources */ = {isa = PBXBuildFile; fileRef = 54FDB6B717CF179000D776C6 /* EUCTWFreq.tab */; };
+		54316EB01A85FE5B00100171 /* GB2312Freq.tab in Sources */ = {isa = PBXBuildFile; fileRef = 54FDB6B817CF179000D776C6 /* GB2312Freq.tab */; };
+		54316EB11A85FE5B00100171 /* JISFreq.tab in Sources */ = {isa = PBXBuildFile; fileRef = 54FDB6B917CF179000D776C6 /* JISFreq.tab */; };
+		54316EB21A85FE7000100171 /* Big5Freq.tab in Sources */ = {isa = PBXBuildFile; fileRef = 54FDB6B317CF179000D776C6 /* Big5Freq.tab */; };
+		54316EB31A85FE7000100171 /* EUCKRFreq.tab in Sources */ = {isa = PBXBuildFile; fileRef = 54FDB6B617CF179000D776C6 /* EUCKRFreq.tab */; };
+		54316EB41A85FE7000100171 /* EUCTWFreq.tab in Sources */ = {isa = PBXBuildFile; fileRef = 54FDB6B717CF179000D776C6 /* EUCTWFreq.tab */; };
+		54316EB51A85FE7000100171 /* GB2312Freq.tab in Sources */ = {isa = PBXBuildFile; fileRef = 54FDB6B817CF179000D776C6 /* GB2312Freq.tab */; };
+		54316EB61A85FE7000100171 /* JISFreq.tab in Sources */ = {isa = PBXBuildFile; fileRef = 54FDB6B917CF179000D776C6 /* JISFreq.tab */; };
 		5441913C17A0E64E007E3C1D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5441913B17A0E64E007E3C1D /* Cocoa.framework */; };
 		5441914D17A0E64F007E3C1D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54ABD36C1738AF9500825BAD /* SenTestingKit.framework */; };
 		5441914E17A0E64F007E3C1D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5441913B17A0E64E007E3C1D /* Cocoa.framework */; };
@@ -595,7 +605,7 @@
 			name = UniversalDetectorOSXTests;
 			productName = UniversalDetectorOSXTests;
 			productReference = 5441914C17A0E64F007E3C1D /* UniversalDetectorOSXTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 		54ABD3191738AE2300825BAD /* UniversalDetector */ = {
 			isa = PBXNativeTarget;
@@ -630,7 +640,7 @@
 			name = UniversalDetectorTest;
 			productName = UniversalDetectorTest;
 			productReference = 54ABD36B1738AF9500825BAD /* UniversalDetectorTest.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -740,6 +750,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54316EB21A85FE7000100171 /* Big5Freq.tab in Sources */,
+				54316EB31A85FE7000100171 /* EUCKRFreq.tab in Sources */,
+				54316EB41A85FE7000100171 /* EUCTWFreq.tab in Sources */,
+				54316EB51A85FE7000100171 /* GB2312Freq.tab in Sources */,
+				54316EB61A85FE7000100171 /* JISFreq.tab in Sources */,
 				5441916117A0E668007E3C1D /* UniversalDetector.m in Sources */,
 				54FDB6E917CF179000D776C6 /* CharDistribution.cpp in Sources */,
 				54FDB6F617CF179000D776C6 /* JpCntx.cpp in Sources */,
@@ -810,6 +825,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54316EAD1A85FE5B00100171 /* Big5Freq.tab in Sources */,
+				54316EAE1A85FE5B00100171 /* EUCKRFreq.tab in Sources */,
+				54316EAF1A85FE5B00100171 /* EUCTWFreq.tab in Sources */,
+				54316EB01A85FE5B00100171 /* GB2312Freq.tab in Sources */,
+				54316EB11A85FE5B00100171 /* JISFreq.tab in Sources */,
 				54ABD3251738AE2300825BAD /* UniversalDetector.m in Sources */,
 				54FDB6E717CF179000D776C6 /* CharDistribution.cpp in Sources */,
 				54FDB6F417CF179000D776C6 /* JpCntx.cpp in Sources */,
