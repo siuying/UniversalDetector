@@ -36,8 +36,11 @@
 - (CFStringEncoding)encodingWithData:(NSData *)data
 {
     NSString *encodingName      = [self encodingAsStringWithData:data];
+    if ([encodingName isEqualToString:@""]) {
+        return kCFStringEncodingInvalidId;
+    }
+
     CFStringEncoding encoding   = CFStringConvertIANACharSetNameToEncoding((CFStringRef)encodingName);
-    
     return encoding;
 }
 

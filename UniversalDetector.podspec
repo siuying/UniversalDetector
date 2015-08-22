@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.8'
 
   s.xcconfig = {
-       'WARNING_CFLAGS' => '-Wno-shorten-64-to-32'
+       'WARNING_CFLAGS' => '-Wno-shorten-64-to-32 -Wno-logical-op-parentheses'
   }
 
   s.library             = 'stdc++'
