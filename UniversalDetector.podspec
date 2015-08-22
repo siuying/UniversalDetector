@@ -8,9 +8,9 @@ Pod::Spec.new do |s|
   s.author        = { 'Francis Chong' => 'francis@ignition.hk' }
   s.source        = { :git => 'https://github.com/siuying/UniversalDetector.git', :tag => s.version.to_s }
 
-  s.source_files        = 'UniversalDetector/*.{h,m}', 'external/*.{h,cpp}', 'external/universalchardet/src/base/*.{cpp,h}'
-  s.public_header_files = 'UniversalDetector/*.h', 'external/uchardet.h'
-  s.preserve_paths      = 'external/universalchardet/src/base/*.{tab}'
+  s.source_files        = 'UniversalDetector/*.{h,m}', 'external/uchardet/src/.{h,cpp}'
+  s.public_header_files = 'UniversalDetector/*.h', 'external/uchardet/src/uchardet.h'
+  s.preserve_paths      = 'external/uchardet/src/*.{tab}'
 
   s.ios.deployment_target = '6.0'
   s.osx.deployment_target = '10.8'

@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Ignition Soft. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 
-@interface UniversalDetectorTest : SenTestCase
+@interface UniversalDetectorTest : XCTestCase
 
 @end

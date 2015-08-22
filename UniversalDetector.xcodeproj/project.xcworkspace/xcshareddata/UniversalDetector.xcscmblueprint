@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B78FB38DA852AE63F23CC2B5DA741C2C1B313653",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B78FB38DA852AE63F23CC2B5DA741C2C1B313653" : 0,
+    "7DF9952B76987F54D66D74171482E11FAF33FDCB" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0BB4D8C1-CEC6-4398-8BA6-0C832F69AA3F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B78FB38DA852AE63F23CC2B5DA741C2C1B313653" : "UniversalDetector",
+    "7DF9952B76987F54D66D74171482E11FAF33FDCB" : "UniversalDetector\/external\/uchardet\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "UniversalDetector",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "UniversalDetector.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:BYVoid\/uchardet.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7DF9952B76987F54D66D74171482E11FAF33FDCB"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/siuying\/UniversalDetector.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B78FB38DA852AE63F23CC2B5DA741C2C1B313653"
+    }
+  ]
+}
